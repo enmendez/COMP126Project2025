@@ -1,0 +1,363 @@
+
+body{
+    font-family: 'Petrona', sans-serif;
+    background: #e8f0f7;
+    padding-top: 60px;
+    margin: 0;
+  }
+  
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  a{
+    text-decoration: none;
+  }
+  
+  .header {
+    background-color: #1a237e;
+    color: white;
+    width: 100%;
+    top:0;
+    position: fixed;
+    z-index: 999;
+  
+  }
+  
+  .headercontent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    min-height: 60px;
+  
+  }
+    
+    
+  .logo {
+    color: white;
+    font-size: 23px;
+    letter-spacing: -1.5px;
+    font-weight: 500;
+  
+  }
+    
+  .nav{
+    position: fixed;
+    top:60px;
+    left: 0;
+    background-color: #1a237e;
+    width: 100%;
+    padding: 10px 0 25px;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+  
+  }
+  
+  
+  .navlist{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    row-gap: 20px;
+  
+  }
+  
+    
+  .navlink{
+    color: whitesmoke;
+    font-size: 16px;
+    transition: all 0.4s ease;
+  }
+  
+  .navlink:hover,
+  .navlink:focus{
+    color: rgb(112, 177, 207);
+    text-decoration: underline;
+  }
+  
+  .hamburger{
+    display: block;
+    cursor: pointer;
+  
+  }
+  
+  
+  .bar{
+    height: 2px;
+    width: 27px;
+    background: white;
+    margin: 5px 0;
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out
+  }
+  
+  .nav--open{
+    transform: translateX(0);
+  }
+  
+  .hamburger--open .bar:nth-child(1){
+    transform: translateY(7px) rotate(45deg)
+  }
+  
+  .hamburger--open .bar:nth-child(2){
+    opacity: 0;
+  }
+  
+  .hamburger--open .bar:nth-child(3){
+    transform: translateY(-7px) rotate(-45deg)
+  }
+  
+  
+  @media (min-width: 650px){
+    .nav{
+      position: static;
+      background: none;
+      transform: none;
+      width: auto;
+      padding: 0;
+      text-align: right;
+    }
+  
+    .navlist{
+      flex-direction: row;
+      justify-content: flex-end;
+      column-gap: 40px;
+  
+    }
+  
+    .navlink{
+      color: white;
+      font-size: 15px;
+    }
+  
+    .hamburger{
+      display: none;
+  
+    }
+    
+  }
+  
+  .top-section{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    gap:2rem;
+    margin: 2rem auto;
+    width: 100%;
+  }
+  
+  .welcome,
+  .container {
+    width: 90%;
+    max-width: 600px;
+    background: #fff;
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .welcome {
+    text-align: center;
+    }
+    
+    .welcome h1 {
+      font-size: 2rem;
+      color: #1a237e;
+      margin-bottom: 1rem;
+    }
+  
+  
+  
+  .welcome p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+    
+  
+  .welcome button {
+    background-color: #3e4dbd;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+    
+  .welcome button:hover {
+    background-color: #1a237e;
+    transform: translateY(-2px);
+  }
+    
+  
+    
+  .container h3 {
+      text-align: center;
+      color: #1a237e;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    
+  form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+    form button {
+      display: block;
+      gap: 1.2rem;
+      width: 100%;
+      padding: 0.9rem;
+      font-size: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      border-radius: 8px;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      cursor: pointer;
+      background-size: 200% 100%;
+      background-position: left center;
+      transition: background-position 0.6s ease, transform 0.3s ease;    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+      margin-top: 0.8rem;
+    }
+    form label {
+      font-weight: 600;
+      color: #1a237e;
+      text-align: left;
+      margin-bottom: 0.3rem;
+    }
+  
+    form input{
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid black;
+      border-radius: 8px;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+    
+    [type="submit"]{
+      text-align: center;
+      background: linear-gradient(90deg, #27b085, #1a237e);
+      width: 100%
+    }
+    
+    form input:hover,
+    form input:focus {
+      border-color:  rgb(28, 59, 74);
+      box-shadow: 0 0 6px  #27b085;
+      outline: none;
+    }
+    
+    form button:active {
+      background: #1a237e; 
+      transform: scale(0.98);
+      transition: background 1s ease; 
+    }
+    
+  
+  
+  @keyframes solidPulse {
+      0% {
+        background: linear-gradient(90deg, #7b1fa2, #283593);
+      }
+      50% {
+        background: #283593; 
+      }
+      100% {
+        background: linear-gradient(90deg, #7b1fa2, #283593);
+      }
+    }
+    
+  
+  footer {
+      text-align: center;
+      color: #ffffff;
+      font-size: 0.9rem;
+      padding: 1.5rem 0;
+      background-color: #283593;
+    }
+    
+  
+  
+  .image-gallery {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 2rem;
+      text-align: center;
+    }
+    
+  .image-gallery h3 {
+      color: #1a237e;
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    
+  .image-gallery .images {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem; 
+    }
+  .image-gallery img {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+    
+  .animated-img:hover {
+      animation: growShrink 0.6s ease forwards;
+    }
+  @keyframes growShrink {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1); 
+      }
+      100% {
+        transform: scale(1); 
+      }
+    }
+  
+  
+  @media (min-width: 992px) {
+      .top-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        max-width: 1200px;
+        gap: 2rem;
+        margin: 3rem auto;
+        width: 100%
+      }
+  
+      .welcome,
+      .container {
+        flex: 1;
+        max-width: 50%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+      }
+    }
+  
+    .image-gallery .images {
+      flex-direction: row;
+      gap: 1rem;
+    }
+  
+    .image-gallery .images img {
+      width: 32%;
+    }
+  
+  
