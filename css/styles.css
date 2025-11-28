@@ -1,7 +1,7 @@
 
 body{
     font-family: 'Petrona', sans-serif;
-    background: #e8f0f7;
+    background: white;
     padding-top: 60px;
     margin: 0;
   }
@@ -129,7 +129,7 @@ body{
     }
   
     .navlink{
-      color: white;
+      color: #818F6D;
       font-size: 15px;
     }
   
@@ -281,7 +281,7 @@ body{
       color: #ffffff;
       font-size: 0.9rem;
       padding: 1.5rem 0;
-      background-color: #283593;
+      background-color: #818F6D;
     }
     
   
@@ -359,5 +359,4 @@ body{
     .image-gallery .images img {
       width: 32%;
     }
-  
   

@@ -14,7 +14,7 @@
 
 
 <body>
-<h1>create a new post page
+<h1>Profile Page
 </h1>
 <header class="header">
 <div class="headercontent">
@@ -37,10 +37,40 @@
     </div>
 </div>
 </header>
+<div class="edit-profile">
+    <h2>
+       <button type="editprofile">Edit Your Profile</button>
+    </h2>
+    <form id="edit-profile-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="image" id="profile-pic">Choose a Profile Picture:</label>
+        <input type="file" id="image" name="image" accept="image/*" required>
+        <label for="bio">Bio:</label>
+        <textarea id="bio" name="bio" rows="4" required></textarea>
 
+        <button type="submit">Save Changes</button>
+        <p id="profile-message"></p>
+    </form>
+</div>
 
-<a href="index.html">back to home</a>
+<div class="post-form-container">
+    <h2>
+        <button type="newpost">Create a New Recipe Post</button>
+    </h2>
+    <form id="post-form">
+        <label for="title">Recipe Title:</label>
+        <input type="text" id="title" name="title" required>
 
+        <label for="ingredients">Ingredients:</label>
+        <textarea id="ingredients" name="ingredients" rows="4" required></textarea>
+
+        <label for="instructions">Instructions:</label>
+        <textarea id="instructions" name="instructions" rows="6" required></textarea>
+
+        <button type="submit">Post!</button>
+        <p id="post-message"></p>
+    </form>
 </body>
 
 <footer>

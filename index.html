@@ -40,30 +40,16 @@
         <section class="welcome">
           <h1>Welcome.</h1>
           <p>We're glad you're here.</p>
-          <button>learn more</button>
+          <button>Search for Recipes</button>
         </section>
-    
-        <div class="container">
-          <h3>Get in Touch!</h3>
-          <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-    
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-    
-            <button type="submit">Submit</button>
-            <p id="form-message"></p>
-          </form>
-        </div>
-      </div>
+  
     
       <section class="image-gallery">
-        <h3>Our Gallery</h3>
+        <h3>Browse for Recipes!</h3>
         <div class="images">
-          <img src="img/flower1.avif" alt="Flower field" class="animated-img">
-          <img src="img/flower2.avif" alt="Flower field" class="animated-img">
-          <img src="img/flower3.avif" alt="Flower field" class="animated-img">
+          <img src="img/food.jpeg" alt="Recipe One" class="animated-img">
+          <img src="img/food2.jpeg" alt="Recipe Two" class="animated-img">
+          <img src="img/food3.jpeg" alt="Recipe Three" class="animated-img">
         </div>
       </section>
   </main>
@@ -74,41 +60,8 @@
     <p>&copy; 2025 GoodEats. All rights reserved.</p>
 </footer>
 
-  <script>
-    const form = document.getElementById('contact-form');
-    const formMessage = document.getElementById('form-message');
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzND4xwZ5wnbfakMoPQ7QXXPAvxTnVHDxE1jXp4pz6iBXcnjwrrBjwIjWwXk-mUL2yw/exec';
   
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-  
-      const emailInput = form.querySelector('input[type="email"]');
-      const emailValue = emailInput.value.trim();
-  
-      if (!emailValue.includes('@')) {
-        formMessage.textContent = 'Please enter a valid email address.';
-        formMessage.style.color = 'red';
-        return;
-      }
-  
-      formMessage.textContent = 'Sending...';
-      formMessage.style.color = 'black';
-  
-      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => {
-          formMessage.textContent = 'Message sent successfully!';
-          formMessage.style.color = 'green';
-          form.reset();
-          setTimeout(() => { formMessage.textContent = ''; }, 5000);
-        })
-        .catch(error => {
-          formMessage.textContent = 'Oops! Something went wrong.';
-          formMessage.style.color = 'red';
-          console.error('Error!', error.message);
-        });
-    });
-  
-
+<script>
     const navEl = document.querySelector(".nav");
     const hamburgerEl = document.querySelector(".hamburger");
   
