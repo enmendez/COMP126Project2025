@@ -5,6 +5,12 @@ body{
     padding-top: 60px;
     margin: 0;
   }
+
+.flex-container{
+  min-height: 100vh;
+  display:flex;
+  flex-direction:column;
+}
   
   ul{
     list-style: none;
@@ -111,7 +117,7 @@ body{
   }
   
   
-  @media (min-width: 650px){
+  @media (min-width: 768px){
     .nav{
       position: static;
       background: none;
@@ -279,6 +285,7 @@ body{
   footer {
       text-align: center;
       color: #ffffff;
+      margin-top:auto;
       font-size: 0.9rem;
       padding: 1.5rem 0;
       background-color: #818F6D;
