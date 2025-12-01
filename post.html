@@ -14,71 +14,69 @@
 
 
 <body>
-<h1>Profile Page </h1>
+<h1 class=""page-title"> Profile Page </h1>
 <header class="header">
-<div class="headercontent">
-    <a href="index.html" class="logo">GoodEats</a>
+    <div class="headercontent">
+        <a href="index.html" class="logo">GoodEats</a>
 
-    <nav class="nav">
-    <ul class="navlist">
-        <li class="navitem">
-            <a href="search.html" class="navlink">search for recipes</a></li>
-        <li class="navitem">
-            <a href="post.html" class="navlink">create new post</a></li>
-        <li class="navitem">
-            <a href="contact.html" class="navlink">contact</a></li>
-    </ul>
-    </nav>
-    <div class="hamburger">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+        <nav class="nav">
+            <ul class="navlist">
+                <li class="navitem">
+                    <a href="search.html" class="navlink">search for recipes</a></li>
+                <li class="navitem">
+                    <a href="post.html" class="navlink">create new post</a></li>
+                <li class="navitem">
+                    <a href="contact.html" class="navlink">contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
     </div>
-</div>
 </header>
 
-<main class="profile">
-    <div class="edit-profile">
-        <h2>
-           <button type="editprofile">Edit Your Profile</button>
-        </h2>
-        <form id="edit-profile-form">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <label for="image" id="profile-pic">Choose a Profile Picture:</label>
-            <input type="file" id="image" name="image" accept="image/*" required>
-            <label for="bio">Bio:</label>
-            <textarea id="bio" name="bio" rows="4" required></textarea>
-    
-            <button type="submit">Save Changes</button>
-            <p id="profile-message"></p>
-        </form>
-    </div>
-    
-</main>
+<div class="profile-create-wrapper">
 
-<aside class="createpost">
-    <div class="post-form-container">
-        <h2>
-            <button type="newpost">Create a New Recipe Post</button>
-        </h2>
-        <form id="post-form">
-            <label for="title">Recipe Title:</label>
-            <input type="text" id="title" name="title" required>
-    
-            <label for="ingredients">Ingredients:</label>
-            <textarea id="ingredients" name="ingredients" rows="4" required></textarea>
-    
-            <label for="instructions">Instructions:</label>
-            <textarea id="instructions" name="instructions" rows="6" required></textarea>
-    
-            <button type="submit">Post!</button>
-            <p id="post-message"></p>
-        </form>
-    </div>
-    
-</aside>
+    <main class="profile">
+        <div class="edit-profile">
+            <h2>Edit Your Profile</h2>
+            <form id="edit-profile-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
 
+                <label for="image" id="profile-pic">Choose a Profile Picture:</label>
+                <input type="file" id="image" name="image" accept="image/*" required>
+
+                <label for="bio">Bio:</label>
+                <textarea id="bio" name="bio" rows="4" required></textarea>
+    
+                <button type="submit">Save Changes</button>
+                <p id="profile-message"></p>
+            </form>
+        </div>
+    </main>
+
+    <aside class="createpost">
+        <div class="post-form-container">
+            <h2>Create a New Recipe Post</h2>
+            <form id="post-form">
+                <label for="title">Recipe Title:</label>
+                <input type="text" id="title" name="title" required>
+    
+                <label for="ingredients">Ingredients:</label>
+                <textarea id="ingredients" name="ingredients" rows="4" required></textarea>
+    
+                <label for="instructions">Instructions:</label>
+                <textarea id="instructions" name="instructions" rows="6" required></textarea>
+    
+                <button type="submit">Post!</button>
+                <p id="post-message"></p>
+            </form>
+        </div>
+    </aside>
+</div>
 
 <footer>
     <p>&copy; 2025 GoodEats. All rights reserved.</p>

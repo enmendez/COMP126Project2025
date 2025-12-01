@@ -9,6 +9,8 @@ body{
     flex-direction:column;
   }
 
+
+
   
   ul{
     list-style: none;
@@ -277,35 +279,54 @@ body{
     }
 
   
-  .post-form-container{
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    text-align: center;
-    border: 4px black;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-    margin-bottom: 50px;
-    width: 75%;
+  .profile-create-wrapper{
+    max-width: 1200px;
+    margin: 120px auto 50px;
+    padding: 0 20px;
+    display: gird;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 2rem;
+    align-items: stretch;
+    box-sizing: border-box;
 
   }
 
-    .edit-profile{
-      max-width: 700px;
-      margin: 0 auto;
-      padding: 40px 20px;
+    .edit-profile, .post-form-container{
+      width: 95%;
+      max-width: 100%;
+      margin: 0 auto 50px;
+      padding: 40px 25px;
       text-align: center;
       border: 4px black;
       box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-      margin-bottom: 50px;
-      width: 75%;
     }
 
-  @media (min-width: 768px){
-    .profile{
-      width: 65%;
+  @media (min-width: 900px){
+    .profile-create-wrapper{
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 2.5rem;
+      align-items: flex-start;
     }
-    .createpost{
-      width: 45%;
+
+
+    .edit-profile, .post-form-container{
+      width: 100%;
+      margin: 10px
+    }
+
+    .edit-profile h2, .post-form-container h2{
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+    form label{
+      font-weight: 600;
+      margin-bottom: .4rem;
+    }
+    form input, form textarea{
+      width: 100%;
+      box-sizing: border-box;
     }
   }
 
@@ -402,7 +423,7 @@ body{
   text-align: center;
 }
 
-search-page h1{ 
+.search-page h1{ 
   font-size: 2.3rem;
   margin-bottom: 20px;
   font-weight: 700;
