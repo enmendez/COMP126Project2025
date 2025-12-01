@@ -35,37 +35,38 @@
       </div>
       </header>
 
-    <h1>Contact Page</h1>
-  <div>
-    <a href="index.html">back to home</a>
-  </div>
-
-
-<div class="container">
-    <h3>Get in Touch!</h3>
-    <form id="contact-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+  <main>
+    <h1 class="contact-title">Contact Page</h1>
+    <div>
+        <a href="index.html">back to home</a>
+    </div>
+    <div class="container">
+        <h3>Get in Touch!</h3>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <button type="submit">Submit</button>
+            <p id="form-message"></p>
+        </form>
+    </div>
     
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-    
-        <button type="submit">Submit</button>
-        <p id="form-message"></p>
-    </form>
-</div>
+    <div class="socials">
+        <p>Find us on social media:</p>
+        <a href="https://www.facebook.com">Facebook</a>
+        <a href="https://www.twitter.com">Twitter</a>
+        <a href="https://www.instagram.com">Instagram</a>
+    </div>
 
-<div class="socials">
-    <p>Find us on social media:</p>
-    <a href="https://www.facebook.com">Facebook</a>
-    <a href="https://www.twitter.com">Twitter</a>
-    <a href="https://www.instagram.com">Instagram</a>
-</div>
+  </main>
 
 <footer>
     <p>&copy; 2025 GoodEats. All rights reserved.</p>
 </footer>
-</body>
+
 
 
   <script>
@@ -111,3 +112,5 @@
       hamburgerEl.classList.toggle("hamburger--open");
     });
   </script>
+
+</body>
