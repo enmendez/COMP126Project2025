@@ -7,6 +7,16 @@ body{
     min-height: 100vh;
   }
 
+  .contact-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 2rem;
+  }
+  
 
 
   
@@ -162,7 +172,7 @@ body{
     border-radius: 16px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   }
-  
+
   .welcome {
     text-align: center;
     }
@@ -198,16 +208,28 @@ body{
     transform: translateY(-2px);
   }
     
-  
-    
-  .container h3 {
+.contact-container{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 3rem;
+}
+
+.container h3 {
       text-align: center;
-      color: #19191b;
+      color: #6f7c5d;
       font-size: 1.5rem;
       margin-bottom: 1.5rem;
     }
 
-
+#bth a{
+  color:#6f7c5d;
+  text-decoration: underline;
+}
     
   form{
     display: flex;
@@ -421,10 +443,10 @@ main, aside{
         width: 100%
       }
   
-      .welcome,
+      .top-section .welcome, .top-section
       .container {
         flex: 1;
-        max-width: 50%;
+        max-width: 70;
         margin: 0;
         display: flex;
         flex-direction: column;
@@ -614,15 +636,7 @@ a[href="index.html"]:hover{
   text-decoration: underline;
 }
 
-.container{
-  width: 90%;
-  max-width: 400px;
-  margin: 2rem;
-  padding: 2rem;
-  border-radius: 16px;
-  box-shadow:0 6px 20px rgba(0, 0, 0, 0.1);
-  justify-content: center;
-}
+
 
 .socials{
   text-align: center;
@@ -636,12 +650,6 @@ a[href="index.html"]:hover{
   font-weight: 500;
 }
 
-@media (min-width: 768px){
-  .container{
-    max-width: 600px;
-    padding: 3rem 2.5rem;
-    margin: 3rem;
-  }
 
 
-}
+ 
