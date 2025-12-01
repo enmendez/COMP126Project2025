@@ -70,7 +70,7 @@
             <input type="checkbox" id="highprotein-checkbox">
             <label for="highprotein-checkbox">High-Protein</label>
           </div>
-          
+
         </section>
         
         <button id="search-button">Search</button>
@@ -81,7 +81,17 @@
         <p>&copy; 2025 GoodEats. All rights reserved.</p>
     </footer>
     
-    </body>
+    <script>
+      const navEl = document.querySelector(".nav");
+      const hamburgerEl = document.querySelector(".hamburger");
+    
+      hamburgerEl.addEventListener("click", () => {
+        navEl.classList.toggle("nav--open");
+        hamburgerEl.classList.toggle("hamburger--open");
+      });
+    </script>
 
+
+</body>
 
 

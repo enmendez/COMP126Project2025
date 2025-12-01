@@ -4,13 +4,11 @@ body{
     background: white;
     padding-top: 60px;
     margin: 0;
+    min-height: 100vh;
+    display:flex;
+    flex-direction:column;
   }
 
-.flex-container{
-  min-height: 100vh;
-  display:flex;
-  flex-direction:column;
-}
   
   ul{
     list-style: none;
@@ -94,7 +92,7 @@ body{
   .bar{
     height: 2px;
     width: 27px;
-    background: white;
+    background: #818F6D;
     margin: 5px 0;
     opacity: 0.8;
     transition: all 0.3s ease-in-out
@@ -184,7 +182,7 @@ body{
   }
     
   
-  .welcome button {
+  .btn {
     background-color: #3e4dbd;
     color: white;
     border: none;
@@ -195,7 +193,7 @@ body{
     transition: all 0.3s ease;
   }
     
-  .welcome button:hover {
+  .btn:hover {
     background-color: #1a237e;
     transform: translateY(-2px);
   }
@@ -204,10 +202,12 @@ body{
     
   .container h3 {
       text-align: center;
-      color: #1a237e;
+      color: #19191b;
       font-size: 1.5rem;
       margin-bottom: 1.5rem;
     }
+
+
     
   form{
     display: flex;
@@ -231,10 +231,11 @@ body{
       background-position: left center;
       transition: background-position 0.6s ease, transform 0.3s ease;    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
       margin-top: 0.8rem;
+      background-color: #6f7c5d;
     }
     form label {
       font-weight: 600;
-      color: #1a237e;
+      color: #131314;
       text-align: left;
       margin-bottom: 0.3rem;
     }
@@ -248,40 +249,66 @@ body{
       box-sizing: border-box;
     }
     
-    [type="submit"]{
-      text-align: center;
-      background: linear-gradient(90deg, #27b085, #1a237e);
-      width: 100%
-    }
+
     
     form input:hover,
     form input:focus {
-      border-color:  rgb(28, 59, 74);
-      box-shadow: 0 0 6px  #27b085;
+      border-color:  rgb(112, 113, 113);
+      box-shadow: 0 0 6px  #6f7c5d;
       outline: none;
     }
     
     form button:active {
-      background: #1a237e; 
+      background: #414a35; 
       transform: scale(0.98);
       transition: background 1s ease; 
     }
     
-  
-  
-  @keyframes solidPulse {
-      0% {
-        background: linear-gradient(90deg, #7b1fa2, #283593);
-      }
-      50% {
-        background: #283593; 
-      }
-      100% {
-        background: linear-gradient(90deg, #7b1fa2, #283593);
-      }
+    form textarea:hover,
+    form textarea:focus{
+      border-color:  rgb(112, 113, 113);
+      box-shadow: 0 0 6px  #6f7c5d;
+      outline: none;
     }
-    
+    form textarea:active{
+      background: #414a35; 
+      transform: scale(0.98);
+      transition: background 1s ease; 
+    }
+
   
+  .post-form-container{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    border: 4px black;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    margin-bottom: 50px;
+    width: 75%;
+
+  }
+
+    .edit-profile{
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+      border: 4px black;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      margin-bottom: 50px;
+      width: 75%;
+    }
+
+  @media (min-width: 768px){
+    .profile{
+      width: 65%;
+    }
+    .createpost{
+      width: 45%;
+    }
+  }
+
   footer {
       text-align: center;
       color: #ffffff;
@@ -419,7 +446,7 @@ search-page h1{
   width: 18px;
   height: 18px;
   cursor: pointer;
-  margin: 5px;
+
 }
 
 
@@ -488,7 +515,6 @@ search-page h1{
     width: 18px;
     height: 18px;
     cursor: pointer;
-    margin: 0;
   }
 
   .filter-options label{
