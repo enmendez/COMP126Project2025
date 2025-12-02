@@ -174,35 +174,7 @@ body{
     font-family: 'Petrona', sans-serif;
   }
   
-  @media (min-width: 768px){
-    .nav{
-      position: static;
-      background: none;
-      transform: none;
-      width: auto;
-      padding: 0;
-      text-align: right;
-    }
-  
-    .navlist{
-      flex-direction: row;
-      justify-content: flex-end;
-      column-gap: 40px;
-  
-  
-    }
-  
-    .navlink{
-      color: #818F6D;
-      font-size: 15px;
-    }
-  
-    .hamburger{
-      display: none;
-  
-    }
-    
-  }
+
   
   .top-section{
     display:flex;
@@ -529,6 +501,7 @@ footer {
         justify-content: center;
         height: auto;
       }
+.results-list{flex-direction:row;}
     }
   
 .image-gallery .images {
@@ -545,8 +518,8 @@ footer {
 
 .search-page{
   max-width: 700px;
-  margin: 0 auto;
-  padding: 40px 20px;
+  margin-left: 2rem;
+  padding-top: 10px;
   text-align: center;
 }
 
@@ -622,8 +595,6 @@ footer {
 @media (min-width: 992px){
   .search-page{
     max-width: 900px;
-    margin: 120px auto 50px;
-    padding: 40px 30px;
     text-align: left;
   }
   
@@ -658,7 +629,7 @@ footer {
 #search-results {
     margin-top: 2.5rem;
   }
-  
+.results-list{flex-direction:row;}
 }
 
 .contact-title{
@@ -709,7 +680,7 @@ footer {
     height: auto;
       }
     
-.recipe h1 {
+.recipe h2 {
       font-size: 2rem;
       color: #6f7c5d;
       margin-bottom: 1rem;
@@ -727,8 +698,48 @@ footer {
 
 .results-list{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction:column;
     justify-content: center;
     gap: 2rem;
     margin-top: 2rem;
+  }
+
+  @media (min-width: 768px){
+    .nav{
+      position: static;
+      background: none;
+      transform: none;
+      width: auto;
+      padding: 0;
+      text-align: right;
+    }
+  
+    .navlist{
+      flex-direction: row;
+      justify-content: flex-end;
+      column-gap: 40px;
+  
+  
+    }
+  
+    .navlink{
+      color: #818F6D;
+      font-size: 15px;
+    }
+  
+    .hamburger{
+      display: none;
+    }
+    .results-list{flex-direction:row;margin:1rem;}}
+
+.back-to-search{margin:2rem; display:flex; justify-content:center;}
+  
+.results-title{
+    text-align: center;
+    font-size: 2rem;
+    margin-top:3rem;
+    color: #6f7c5d;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
   }
