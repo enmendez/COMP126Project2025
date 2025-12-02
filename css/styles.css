@@ -498,8 +498,8 @@ footer {
 
 .search-page{
   max-width: 700px;
-  margin: 0 auto;
-  padding: 40px 20px;
+  margin-left: 2rem;
+  padding-top: 10px;
   text-align: center;
 }
 
@@ -575,8 +575,6 @@ footer {
 @media (min-width: 992px){
   .search-page{
     max-width: 900px;
-    margin: 120px auto 50px;
-    padding: 40px 30px;
     text-align: left;
   }
   
@@ -662,7 +660,7 @@ footer {
     height: auto;
       }
     
-.recipe h1 {
+.recipe h2 {
       font-size: 2rem;
       color: #6f7c5d;
       margin-bottom: 1rem;
@@ -712,7 +710,7 @@ footer {
     .hamburger{
       display: none;
     }
-    .results-list{flex-direction:row;}}
+    .results-list{flex-direction:row;margin:1rem;}}
 
 .back-to-search{margin:2rem; display:flex; justify-content:center;}
   
@@ -723,5 +721,5 @@ footer {
     color: #6f7c5d;
     width: 100%;
     box-sizing: border-box;
-    padding: 0 20px;
+    padding: 20px;
   }
