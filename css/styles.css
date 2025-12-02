@@ -670,7 +670,7 @@ footer {
 #search-input{font-family: 'Petrona', sans-serif; border: 1px solid #818F6D; }
 
 .filter-name{ font-family: 'Petrona', sans-serif; color: #6f7c5d;}
-#other-text{ font-family: 'Petrona', sans-serif; border: 1px solid #818F6D; width: 9rem;border-radius: 4px;}
+#other-text{ font-family: 'Petrona', sans-serif; border: 1px solid #818F6D; padding: 6px; width: 9rem; border-radius: 4px; }
 
 .recipe {
     width: 90%;
