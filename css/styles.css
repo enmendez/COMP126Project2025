@@ -92,6 +92,7 @@ body{
   .navlist{
     display: flex;
     flex-direction: column;
+    padding-right: 15px;
     align-items:flex-end;
     row-gap: 20px;
   
@@ -178,6 +179,7 @@ body{
       flex-direction: row;
       justify-content: flex-end;
       column-gap: 40px;
+  
   
     }
   
