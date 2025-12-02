@@ -39,7 +39,7 @@
         <h1>Search for Recipes</h1>
         <input type="text" id="search-input" placeholder="Enter Recipe Name">
         <section class="filters">
-          <h3>Filter by Dietary Preferences:</h3>
+          <h3 class="filter-name">Filter by Dietary Preferences:</h3>
 
           <div class="filter-options"> 
             <label><input type="checkbox" id="vegetarian-checkbox">Vegetarian</label>
@@ -64,10 +64,14 @@
           <div class="filter-options"> 
             <label><input type="checkbox" id="highprotein-checkbox">High-Protein</label>
           </div>
+          <div class="filter-options"> 
+            <label><input type="checkbox" id="other">Other: </label>
+          </div>
+          <input type="text" id="other-text" placeholder="Enter diatery preference">
 
         </section>
         
-        <button id="search-button">Search</button>
+        <a href="results.html" class="btn">Search for Recipes</a>
         <div id="search-results"></div>
       </div>
    

@@ -106,7 +106,6 @@ body{
   
   .navlink:hover,
   .navlink:focus{
-    color:  #818F6D ;
     text-decoration: underline;
   }
   
@@ -513,10 +512,12 @@ footer {
 .image-gallery .images {
       flex-direction: row;
       gap: 1rem;
+      justify-content: center;
     }
   
 .image-gallery .images img {
-      width: 32%;
+      width: 100%;
+      height:80%
     }
 
 
@@ -664,6 +665,41 @@ footer {
   color: #414a35;
   text-decoration: underline;
 }
+#search-input{font-family: 'Petrona', sans-serif; border: 1px solid #818F6D; }
 
+.filter-name{ font-family: 'Petrona', sans-serif; color: #6f7c5d;}
+#other-text{ font-family: 'Petrona', sans-serif; border: 1px solid #818F6D; width: 9rem;border-radius: 4px;}
 
- 
+.recipe {
+    width: 90%;
+    max-width: 600px;
+    background: #fff;
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .recipe {
+    text-align: center;
+    flex: 1;
+    max-width: 70;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+      }
+    
+    .recipe h1 {
+      font-size: 2rem;
+      color: #6f7c5d;
+      margin-bottom: 1rem;
+    }
+  
+  
+  
+  .recipe p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
