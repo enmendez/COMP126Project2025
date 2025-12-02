@@ -1,10 +1,20 @@
 
+html,body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 body{
     font-family: 'Petrona', sans-serif;
     background: white;
-    padding-top: 60px;
+    padding-top: 72px;
     margin: 0;
+    display:flex;
+    flex-direction:column;
     min-height: 100vh;
+
+
   }
 
   .contact-container{
@@ -32,12 +42,16 @@ body{
   .header {
     background-color:#FCFAEE;
     color: white;
-    width: 100%;
     top:0;
+    left: 0;
+    right: 0;
     position: fixed;
     z-index: 999;
+    border-bottom: 12px solid #6f7c5d;
   
   }
+
+
   
   .headercontent {
     display: flex;
@@ -65,8 +79,8 @@ body{
     position: fixed;
     top:60px;
     left: 0;
+    right:0;
     background-color: #818F6D;
-    width: 100%;
     padding: 10px 0 25px;
     transform: translateX(-100%);
     transition: all 0.3s ease-in-out;
@@ -103,6 +117,26 @@ body{
   }
   
 
+
+
+.filter-options{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.filter-options input[type="checkbox"]{
+  width: 20px;
+  height: 20px;
+  cursor:pointer;
+}
+
+.filter-options label{
+  font-size: 1rem;
+  cursor:pointer;
+}
   
 .bar{
     height: 2px;
@@ -326,7 +360,7 @@ main, aside{
     font-size: 2rem;
     margin-top: 120px;
     margin-bottom: 30px;
-    color: black;
+    color: #6f7c5d;
     width: 100%;
     box-sizing: border-box;
     padding: 0 20px;
@@ -404,6 +438,7 @@ footer {
       color: #ffffff;
       margin-top:auto;
       font-size: 0.9rem;
+      width: 100%;
       padding: 1.5rem 0;
       background-color: #818F6D;
     }
@@ -496,6 +531,7 @@ footer {
   font-size: 2.3rem;
   margin-bottom: 20px;
   font-weight: 700;
+  color:#818F6D;
 }
 
 #search-input{
@@ -579,41 +615,8 @@ footer {
     border-radius: 6px;
     margin-bottom: 25px;
   }
-  .filters{
-    margin-bottom: 25px;
-  }
 
-  .filter h3{
-    margin-bottom: 12px;
-    font-size: 1.3rem;
-
-  }
-
-  .filter-options{
-    display: flex;
-    grid-template-columns: repeast(3,1fr);
-    gap: 10px 20px
-  }
-
-  .filter-options div{
-    display: flex;
-    align-items: center;
-    gap: 4px;
-  }
-
-  .filter-options input[type="checkbox"]{
-    width: 18px;
-    height: 18px;
-    cursor: pointer;
-  }
-
-  .filter-options label{
-    font-size: 1rem;
-    cursor: pointer;
-    margin:0;
-  }
-
-  #search-button{
+#search-button{
     padding: 12px 24px;
     font-size: 1rem;
     color: white;
@@ -624,12 +627,12 @@ footer {
     transition: 0.3s ease;
   }
 
-  #search-button:hover {
+#search-button:hover {
     background-color: #6f7c5d;
     transform: translateY(-2px);
   }
 
-  #search-results {
+#search-results {
     margin-top: 2.5rem;
   }
   
@@ -642,10 +645,6 @@ footer {
   margin-bottom: 1rem;
   color: #6f7c5d;
 }
-
-
-
-
 
 
 
