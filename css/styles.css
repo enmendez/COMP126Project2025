@@ -367,6 +367,10 @@ main, aside{
 
   }
 
+.post-form-container{
+  border: #6f7c5d solid 1px;
+}
+
 .edit-profile, .post-form-container{
       width: 100%;
       height: auto;
@@ -387,7 +391,7 @@ main, aside{
       margin: 90px auto 60px;
       padding: 0 20px;
       display: grid;
-      grid-template-columns: 2fr 1fr;
+      grid-template-columns: 2fr 2fr;
       gap: 3rem;
       align-items: stretch;
       box-sizing: border-box;
