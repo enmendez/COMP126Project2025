@@ -910,7 +910,8 @@ footer {
 
 .recipe-img {
     margin:auto;
-    width: 50%;
+    width: 100%;
+    height: auto;
     border-radius: 16px;
     height:60%;
     justify-content:center;
@@ -981,6 +982,8 @@ footer {
   display: flex;
   justify-content: center;
 }
+
+
 .pasta{
   width: 100%;
   border-radius: 16px;
