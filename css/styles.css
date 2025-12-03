@@ -355,7 +355,6 @@ form label {
 form input{
       width: 100%;
       padding: 0.8rem;
-      border: 1px solid black;
       border-radius: 8px;
       font-size: 1rem;
       box-sizing: border-box;
@@ -986,11 +985,12 @@ footer {
 }
 
 
-.pasta{
-  width: 100%;
+.food{
+  width: 60%;
   border-radius: 16px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
   cursor: pointer;
+  height: 40rem;
 }
 
 .ingredients-list{
