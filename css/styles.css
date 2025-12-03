@@ -4,6 +4,9 @@ html,body{
   padding: 0;
   width: 100%;
 }
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
 body{
     font-family: 'Petrona', sans-serif;
@@ -50,7 +53,9 @@ body{
     border-bottom: 12px solid #6f7c5d;
   
   }
-
+.main{
+  padding-top: 80px;
+}
 
   
   .headercontent {
@@ -76,6 +81,8 @@ body{
     text-decoration:none;
   }
   .nav{
+    width: 100%;
+    overflow-x: hidden;
     position: fixed;
     top:60px;
     left: 0;
@@ -85,6 +92,8 @@ body{
     transform: translateX(-100%);
     transition: all 0.3s ease-in-out;
     text-align: center;
+    max-width: 100%;
+    overflow-x: hidden;
   
   }
   
@@ -121,7 +130,7 @@ body{
 
 .filter-options{
   display: flex;
-  align-items: center;
+  flex-direction: column;
   gap: 3rem;
   font-size: 1rem;
   margin-bottom: 20px;
@@ -193,10 +202,12 @@ body{
     padding: 2.5rem 2rem;
     border-radius: 16px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+
   }
 
   .welcome {
     text-align: center;
+    margin-bottom: 40px;
     }
     
     .welcome h1 {
@@ -371,7 +382,7 @@ main, aside{
   }
 
 .profile-create-wrapper{
-    width: 85%;
+    width: 100%;
     margin: 50px auto;
     padding: 0 20px;
     display: flex;
@@ -379,7 +390,6 @@ main, aside{
     flex-direction: column;
     gap: 2rem;
     box-sizing: border-box;
-
   }
 
 .post-form-container{
@@ -445,7 +455,7 @@ main, aside{
       margin: 90px auto 60px;
       padding: 0 20px;
       display: grid;
-      grid-template-columns: 2fr 2fr;
+      grid-template-columns: 2fr 1fr;
       gap: 3rem;
       align-items: stretch;
       box-sizing: border-box;
@@ -487,9 +497,7 @@ form label{
       font-family: 'Petrona', sans-serif;
     }
 form input, form textarea{
-      width: 100%;
       max-width: 100%;
-      box-sizing: border-box;
     }
   }
 
@@ -555,11 +563,11 @@ footer {
         align-items: stretch;
         max-width: 1200px;
         gap: 2rem;
-        margin: 3rem auto;
+        margin: auto;
         width: 100%
       }
   
-.top-section .welcome, .top-section.container {
+.top-section .welcome, .top-section .container {
         flex: 1;
         max-width: 70;
         margin: 0;
@@ -582,13 +590,12 @@ footer {
       height:80%
     }
 
-
-.search-page{
-  max-width: 700px;
-  margin-left: 2rem;
-  padding-top: 10px;
-  text-align: center;
-}
+.search-page {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
 
 .search-page h1{ 
   font-size: 2.3rem;
@@ -739,7 +746,6 @@ footer {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
     flex: 1;
-    max-width: 70;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -772,11 +778,15 @@ footer {
   }
 
   @media (min-width: 768px){
+    .filter-options{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px 20px
+    }
     .nav{
       position: static;
       background: none;
       transform: none;
-      width: auto;
       padding: 0;
       text-align: right;
     }
@@ -784,7 +794,7 @@ footer {
     .navlist{
       flex-direction: row;
       justify-content: flex-end;
-      column-gap: 40px;
+      gap: 40px;
   
   
     }
@@ -796,8 +806,11 @@ footer {
   
     .hamburger{
       display: none;
+
+    
     }
-    .results-list{flex-direction:row;margin:1rem;}}
+  .results-list{flex-direction:row;margin:1rem;}
+  .mission-text{text-align:center;max-width: 75%; margin-left:auto; margin-right:auto;}
 
 .back-to-search{margin:2rem; display:flex; justify-content:center;}
   
@@ -810,3 +823,47 @@ footer {
     box-sizing: border-box;
     padding: 20px;
   }
+
+.recipeename{
+  display: flex;
+  text-align: Center;
+  justify-content: center;
+  color:#6f7c5d
+}
+
+.recipe-img{
+  display: flex;
+  justify-content: center;
+}
+.pasta{
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.ingredients-list{
+  list-style-type:circle;
+  text-align: left;
+}
+
+.desc, .ingr{
+  color:#6f7c5d
+}
+.rec-details{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  gap:2rem;
+  margin: 2rem auto;
+  width: 100%;
+}
+
+.details{
+  width: 90%;
+  max-width: 600px;
+  background: #fff;
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
