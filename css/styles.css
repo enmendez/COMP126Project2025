@@ -361,7 +361,9 @@ form input{
       box-sizing: border-box;
     }
     
-
+.contact-container button:hover, .contact-container button:focus{
+  background-color: #414a35;
+}
     
 form input:hover,
 form input:focus {
