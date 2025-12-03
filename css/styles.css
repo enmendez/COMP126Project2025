@@ -253,7 +253,14 @@ body{
   }
 
   .btn, #other-text{
-    column-gap: 4rem;
+    margin-bottom: .7rem;
+  }
+
+  #other-text{
+    border-radius: .3rem;
+    padding: .5rem;
+    font-family: 'Petrona', sans-serif;
+
   }
   
   .btn:hover {
@@ -720,7 +727,7 @@ footer {
     margin-top: 2.5rem;
   }
 .results-list{flex-direction:row;}
-}
+
 
 .contact-title{
   text-align: center;
@@ -751,7 +758,9 @@ footer {
 #search-input{font-family: 'Petrona', sans-serif; border: 1px solid #818F6D; }
 
 .filter-name{ font-family: 'Petrona', sans-serif; color: #6f7c5d;}
-#other-text{ font-family: 'Petrona', sans-serif; border: 1px solid #818F6D; padding: 6px; width: 9rem; border-radius: 4px; }
+#other-text{ font-family: 'Petrona', sans-serif; border: 1px solid #818F6D; padding: .5rem; width: 20%; border-radius: 4px; }
+
+
 
 .recipe {
     width: 50%;
@@ -792,6 +801,7 @@ footer {
     gap: 2rem;
     margin-top: 2rem;
   }
+}
 
   @media (min-width: 768px){
     .filter-options{
@@ -880,3 +890,4 @@ footer {
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
+  }
