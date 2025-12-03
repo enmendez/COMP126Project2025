@@ -986,11 +986,12 @@ footer {
 
 
 .food{
-  width: 60%;
+  max-width: 100%;
+  
   border-radius: 16px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
   cursor: pointer;
-  height: 40rem;
+  height: auto;
 }
 
 .ingredients-list{
