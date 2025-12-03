@@ -415,6 +415,33 @@ main, aside{
     box-sizing: border-box;
   }
 
+
+  .contact-title{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #6f7c5d;
+  }
+
+  .socials{
+    text-align: center;
+    margin: 2rem;
+  
+  }
+  
+  .socials a {
+    margin: .5rem;
+    color: #818F6D;
+    font-weight: 500;
+  }
+  
+  .socials a:hover{
+    color: #414a35;
+    text-decoration: underline;
+  }
+
+
 .post-form-container{
   border: #d59637 solid 2px;
 }
