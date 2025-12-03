@@ -455,7 +455,7 @@ main, aside{
       margin: 90px auto 60px;
       padding: 0 20px;
       display: grid;
-      grid-template-columns: 2fr 1fr;
+      grid-template-columns: 2fr 2fr;
       gap: 3rem;
       align-items: stretch;
       box-sizing: border-box;
@@ -795,8 +795,6 @@ footer {
       flex-direction: row;
       justify-content: flex-end;
       gap: 40px;
-  
-  
     }
   
     .navlink{
@@ -806,9 +804,8 @@ footer {
   
     .hamburger{
       display: none;
-
-    
     }
+
   .results-list{flex-direction:row;margin:1rem;}
   .mission-text{text-align:center;max-width: 75%; margin-left:auto; margin-right:auto;}
 
